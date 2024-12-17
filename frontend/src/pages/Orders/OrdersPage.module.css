@@ -1,0 +1,82 @@
+.ordersPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: #f0f8ff;
+    color: #003366;
+    font-family: 'Arial', sans-serif;
+}
+
+.ordersHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0066cc;
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0066cc;
+}
+
+.ordersContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.orderCard {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 51, 102, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.orderCard:hover {
+    transform: scale(1.03);
+}
+
+.orderHeader {
+    margin-bottom: 1rem;
+     text-align: center;
+}
+.orderId{
+    font-size: 1.2rem;
+    color: skyblue;
+    margin-bottom: 1rem;
+    max-width: 90%; 
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+.orderStatus {
+    font-weight: bold;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    color: skyblue;
+}
+
+.orderDetails {
+    margin-top: 1rem;
+}
+
+.orderDetails div {
+    margin-bottom: 0.5rem;
+}
+
+.noOrders {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0066cc;
+}

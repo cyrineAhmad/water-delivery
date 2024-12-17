@@ -1,0 +1,114 @@
+.footer {
+    background: linear-gradient(to right, #007BFF, #00C6FF); 
+    color: white;
+  
+    text-align: left;
+    font-size: 0.9rem;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    text-align: left;
+    vertical-align: top;
+    min-width: 250px; 
+    word-wrap: break-word;
+}
+
+.footer h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: blue;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin: 0.25rem 0;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 1rem;
+}
+
+.social-links a:hover {
+    color: blue;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 1rem;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+.footer-section-about-us a {
+    color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        overflow: auto; 
+        white-space: nowrap; 
+    }
+
+    .footer-section {
+        min-width: 150px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 0.75rem;
+    }
+
+    .footer h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer-container {
+        padding: 0 1rem; 
+    }
+
+    .footer-section {
+        min-width: 120px; 
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .email-container {
+        margin-top: 10px; 
+    }
+}
+
+.footer-section p {
+    color: blue; 
+}

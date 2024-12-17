@@ -1,0 +1,10 @@
+.title {
+    color: #616161; 
+    font-weight: bold;
+  }
+  .title--large {
+      font-size: 2rem; 
+  }
+  .title--medium { 
+      font-size: 1.5rem;
+  }

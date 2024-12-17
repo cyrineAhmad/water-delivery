@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    height: 15rem; 
+    max-width: 80%; 
+    margin: 2rem auto; 
+    color: #1e88e5;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.container a {
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container a:hover {
+    opacity: 0.9;
+    transform: scale(1.05); 
+    cursor: pointer;
+}
+

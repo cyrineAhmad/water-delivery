@@ -1,0 +1,214 @@
+/* profilePage.module.css */
+
+.profilePageWrapper {
+  background: linear-gradient(to bottom, #2c3e50, #34495e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.profilePageWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), transparent 50%);
+  pointer-events: none;
+}
+
+.profilePage__header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.profilePage__welcome {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  color: #ecf0f1;
+  position: relative;
+  z-index: 1;
+}
+
+.profilePage__infoSection,
+.profilePage__changePasswordSection{
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 1;
+  width: 40%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.profilePage__infoSectionTitle,
+.profilePage__changePasswordTitle{
+  color: #fff;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profilePage__infoItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.profilePage__infoLabel {
+  font-weight: 600;
+  min-width: 120px;
+  color: #ddd;
+  flex: 1;
+  margin-right: 10px;
+  flex-basis: 100%;
+}
+
+.profilePage__infoValue {
+  flex: 2;
+  color: #eee;
+  word-break: break-word;
+}
+
+.profilePage__infoSection input,
+.profilePage__changePasswordSection input {
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.profilePage__infoSection input::placeholder,
+.profilePage__changePasswordSection input::placeholder {
+  color: #bbb;
+}
+
+.profilePage__button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.profilePage__button:last-child {
+  margin-right: 0;
+}
+
+.profilePage__editButton {
+  background-color: transparent;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+.profilePage__saveButton {
+   background-color: transparent;
+  color: green;
+  border-color: green;
+}
+
+.profilePage__cancelButton {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+.profilePage__passwordButton {
+  background-color: transparent;
+  color: #3498db;
+  border-color: #3498db;
+}
+
+
+.profilePage__button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.profilePage__saveButton:hover {
+  background-color: #239b5a;
+}
+
+.profilePage__actions {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  width: fit-content;
+  margin-top: -15px;
+  margin-left: 0;
+  align-items: flex-start;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.profilePage__actionText {
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.profilePage__link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #3498db;
+
+}
+
+.profilePage__link:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
+
+.profilePage__buttonLink {
+  color: #3498db;;
+  text-decoration: none;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.profilePage__buttonLink:hover {
+  text-decoration: underline;
+  color: #ddd;
+}
