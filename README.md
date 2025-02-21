@@ -1,5 +1,5 @@
-🚰 Click & Drink – Water Delivery & Refilling (MERN Website)
-A seamless web application that simplifies water delivery for everyone.
+🚰 Click & Drink – Water Delivery & Refilling (MERN Website)  
+A seamless web application that simplifies water delivery for everyone.  
 
 🌊 Customers can:  
 Find their favorite water suppliers.  
